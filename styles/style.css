@@ -33,13 +33,6 @@ li {
   list-style: none;
 }
 
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .btn {
   display: inline-block;
   border-radius: 8px;
@@ -175,6 +168,104 @@ a {
 }
 
 @media screen and (min-width: 576px) {
+  .mobile-header {
+    display: none;
+  }
+  .desktop-header {
+    margin: 1.25rem 1rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .header-content {
+    font-size: 0.9rem;
+    font-weight: normal;
+    letter-spacing: -0.03rem;
+  }
+
+  .header-content:hover {
+    font-weight: bold;
+  }
+
+  .main-logo {
+    width: 5.125rem;
+    height: 1.25rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .box-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box-left {
+    width: 50%;
+    height: 33.5rem;
+    background-image: url(../Images/DesktopImages/cdc-dispatch21_1440_1200.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .box-right {
+    width: 50%;
+    height: 33.5rem;
+    background-image: url(../Images/DesktopImages/pcd-dispatch5_1440_12002.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop-footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin-top: 1.5rem;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .column-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-left: 2.5rem;
+  }
+
+  .footer-d-heading {
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+    color: black;
+  }
+
+  .column-1-top,
+  .column-1-bottom,
+  .footer-d-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .input-footer-text {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid black;
+  }
+
+  .column-4 {
+    margin-right: 2.5rem;
+  }
 }
 
 /* Medium devices (tablets) */
@@ -185,12 +276,6 @@ a {
 /* Large devices (desktops) */
 
 @media (min-width: 991px) {
-  body {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 /* Extra large devices (large desktops) */
